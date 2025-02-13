@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Form, Button, Container, Card } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 const Register = () => {
   const [email, setEmail] = useState("");
   const [zprn, setZprn] = useState("");
@@ -52,7 +52,9 @@ const Register = () => {
             </Button>
           </Form>
           <p className="text-center mt-3">
-            Already have an account? <a href="/login" className="text-primary">Login</a>
+            Already have an account? <Link to="/login" className="fw-bold">
+              Login
+            </Link>
           </p>
         </Card.Body>
       </Card>

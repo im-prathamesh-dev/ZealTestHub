@@ -50,7 +50,6 @@ const TeacherDashboard = () => {
       <h2 className="text-center mb-4 mt-5"> 🧑‍🏫 Teacher Dashboard</h2>
 
       <Row>
-        {/* Left Section - Profile */}
         <Col md={4}>
           <Card className="text-center shadow">
             <Card.Body>
@@ -65,7 +64,7 @@ const TeacherDashboard = () => {
           </Card>
         </Col>
 
-        {/* Right Section - Stats */}
+        
         <Col md={8}>
           <Row>
             <Col md={6}>
@@ -127,7 +126,7 @@ const TeacherDashboard = () => {
         </Col>
       </Row>
 
-      {/* Modals */}
+      
       <EditProfile
         show={showEditModal}
         handleClose={() => setShowEditModal(false)}
@@ -136,7 +135,7 @@ const TeacherDashboard = () => {
       />
 
      
-      {/* Confirm Delete Modal */}
+      
       <Modal show={showConfirmDelete} onHide={() => setShowConfirmDelete(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Confirm Delete</Modal.Title>
@@ -148,7 +147,7 @@ const TeacherDashboard = () => {
         </Modal.Footer>
       </Modal>
 
-      {/* Edit Test Modal */}
+      
       <Modal show={showEditTestModal} onHide={() => setShowEditTestModal(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Edit Test</Modal.Title>

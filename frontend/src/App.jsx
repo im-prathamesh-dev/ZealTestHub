@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TeacherDashboard from "./pages/TeacherDashbord";
 import ContactUs from "./pages/ContactUs";
-import SuperAdminDashboard from "./pages/SuperAdminDashboard";
+import SuperAdminDashboard from "./pages/Admin/SuperAdminDashboard";
 
 function App() {
   return (
