@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer className="bg-dark text-light py-4 mt-5">
@@ -15,31 +15,20 @@ function Footer() {
           <Col md={4}>
             <h5>Quick Links</h5>
             <Nav className="flex-column">
-              <Nav.Link href="#home" className="text-light">Home</Nav.Link>
-              <Nav.Link href="#about" className="text-light">About</Nav.Link>
-              <Nav.Link href="#services" className="text-light">Services</Nav.Link>
-              <Nav.Link href="#contact" className="text-light">Contact</Nav.Link>
+              <Nav.Link  linkto="/" className="text-light">Home</Nav.Link>
+              <Nav.Link linkto="/login" className="text-light">Student Login</Nav.Link>
+              <Nav.Link linkto="/teacherlogin" className="text-light">Teacher Login</Nav.Link>
+              <Nav.Link linkto="/adminlogin" className="text-light"></Nav.Link>
             </Nav>
           </Col>
           <Col md={4}>
             <h5>Contact Us</h5>
             <p>
               Email: support@zealtesthub.com<br />
-              Phone: +123 456 7890<br />
-              Address: 123 Test Street, Knowledge City
+              Phone: +91 8806605436<br />
+              Address: ZIBACAR,Narhe,Pune.
             </p>
-            <h5>Follow Us</h5>
-            <Nav>
-              <Nav.Link href="#" className="text-light">
-                <i className="fab fa-facebook-f"></i> Facebook
-              </Nav.Link>
-              <Nav.Link href="#" className="text-light">
-                <i className="fab fa-twitter"></i> Twitter
-              </Nav.Link>
-              <Nav.Link href="#" className="text-light">
-                <i className="fab fa-linkedin-in"></i> LinkedIn
-              </Nav.Link>
-            </Nav>
+            
           </Col>
         </Row>
         <Row className="mt-4">
