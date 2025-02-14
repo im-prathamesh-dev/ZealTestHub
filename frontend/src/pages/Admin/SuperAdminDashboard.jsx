@@ -9,7 +9,7 @@ const SuperAdminDashboard = () => {
     classes: 12,
   });
 
-  return (
+  return ( 
     <Container fluid className="p-4">
       <h2 className="text-center mb-4 mt-3"> 🏫 Super Admin Dashboard</h2>
 

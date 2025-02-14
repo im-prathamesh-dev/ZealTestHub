@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Container, Row, Col, Card, Button, Table, Modal, Form } from "react-bootstrap";
-import EditProfile from "../components/EditProfile";
-import AddTest from "../components/AddTest";
-import ManageClass from "../components/ManageClass";
+import EditProfile from "../../components/EditProfile";
+import AddTest from "../../components/AddTest";
+import ManageClass from "../../components/ManageClass";
 
 const TeacherDashboard = () => {
   const [showEditModal, setShowEditModal] = useState(false);
