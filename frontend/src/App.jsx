@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import TeacherDashboard from "./pages/Teacher/TeacherDashbord";
 import ContactUs from "./pages/ContactUs";
 import SuperAdminDashboard from "./pages/Admin/SuperAdminDashboard";
+import AdminLogin from "./pages/AdminLogin";
+import TeacherLogin from "./pages/Teacherogin";
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/adminlogin" element={<AdminLogin/>} />
+          <Route path="/teacherlogin" element={<TeacherLogin/>} />
+
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/tdashboard" element={<TeacherDashboard />} />
           <Route path="*" element={<h1>Not Found</h1>} />
